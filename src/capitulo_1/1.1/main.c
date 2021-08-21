@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "reciprocal.hpp"
+#include<stdlib.h>
+#include "../1.3/reciprocal.hpp"
 
 int main(int argc, char const *argv[])
 {
