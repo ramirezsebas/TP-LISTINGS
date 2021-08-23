@@ -52,13 +52,16 @@ all: $(HEADER_RECIPROCAL)
 
 listing-1.1: $(HEADER_RECIPROCAL)
 	@echo "Creando el Object File main.o"
-	gcc -c $(DIRECTORIO_SRC_CAPITULO_1)1.1/main.c -o $(DIRECTORIO_OBJ_CAPITULO_1)main.o
+	@mkdir -p obj && mkdir -p obj/capitulo_1
+	@gcc -c $(DIRECTORIO_SRC_CAPITULO_1)1.1/main.c -o $(DIRECTORIO_OBJ_CAPITULO_1)main.o
 
 listing-1.2: $(HEADER_RECIPROCAL)
 	@echo "Creando el Object File reciprocal.o"
-	g++ -c $(DIRECTORIO_SRC_CAPITULO_1)1.2/reciprocal.cpp -o $(DIRECTORIO_OBJ_CAPITULO_1)reciprocal.o
+	@mkdir -p obj && mkdir -p obj/capitulo_1
+	@g++ -c $(DIRECTORIO_SRC_CAPITULO_1)1.2/reciprocal.cpp -o $(DIRECTORIO_OBJ_CAPITULO_1)reciprocal.o
 
 clean:
+	@mkdir -p obj && mkdir -p obj/capitulo_1
 	@rm -rf ./obj/*
 	@mkdir ./obj/capitulo_1
 	@mkdir ./obj/capitulo_2
