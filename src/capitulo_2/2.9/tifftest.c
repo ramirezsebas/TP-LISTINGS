@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <tiffio.h>
 #include <string.h>
+
+//Para compilar: gcc -g -o tifftest tifftest.c -ltiff
+//Para ejecutar: ./tifftest image.tiff
+
 //Para instalar tiffio.h en ubuntu
 // sudo apt install libtiff-dev
 int main (int argc, char** argv)
