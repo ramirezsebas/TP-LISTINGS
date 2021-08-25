@@ -1,3 +1,10 @@
+# Capitulos Disponibles:
+- cap 1: 1.1, 1.2, 1.3 ✓
+- cap 2: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9 ✓
+- cap 3: 3.1, 3.2, 3.3 ; Faltan: 3.4 - 3.7
+- cap 4:
+- cap 5:
+
 # Trabajo Practico 1 - Lenguaje de Programacion 3
 
 ## Conforme al contenido programático de la cátedra y al contenido de libro “Advanced Linux Programing”, el Trabajo Práctico Nro. 1 se define como: “Implementar en lenguaje C/C++ los ejemplos programáticos indicados en los listings de los capítulos 1 a 5 del libro”. Para ello:
