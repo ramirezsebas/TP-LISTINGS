@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <sys/shm.h>
 #include <sys/stat.h>
+
+
 int main ()
 {
   int segment_id;
@@ -36,4 +38,5 @@ int main ()
   shmctl (segment_id, IPC_RMID, 0);
 
   return 0;
+
 }
