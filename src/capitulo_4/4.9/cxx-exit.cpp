@@ -1,6 +1,10 @@
 #include <pthread.h>
+#include <iostream>
 
-extern bool should_exit_thread_immediately ();
+#define MAX 5
+
+//Funcion innecesaria para este ejemplo
+//extern bool should_exit_thread_immediately ();
 
 class ThreadExitException
 {
@@ -23,12 +27,23 @@ private:
   void* thread_return_value_;
 };
 
+//Trabajo a realizar
+int fact(int n){
+  int i;
+  int factorial=1;
+  for(i=1;i<=n;i++)
+    factorial = factorial * i;
+  return factorial;
+}
+
+
 void do_some_work ()
 {
+  int k = 1;
   while (1) {
     /* Do some useful things here...  */
 
-    if (should_exit_thread_immediately ()) 
+    if (k++ == MAX)
       throw ThreadExitException (/* thread's return value = */ NULL);
   }
 }
@@ -43,4 +58,11 @@ void* thread_function (void*)
     ex.DoThreadExit ();
   }
   return NULL;
+}
+
+int main(){
+	pthread_t thread_id;
+	pthread_create(&thread_id, NULL, &thread_function, NULL);
+	pthread_join(thread_id, NULL);
+	return 0;
 }
