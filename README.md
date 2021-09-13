@@ -36,6 +36,9 @@ Se deberá completar o complementar el código de aquellos listings que así lo 
 
 ## Comandos
 ```bash
+//Instalar la libreria (En Ubuntu y derivados)
+sudo apt install libtiff-dev
+
 //Compilar Todos los programas desarrolladas
 make all
 
