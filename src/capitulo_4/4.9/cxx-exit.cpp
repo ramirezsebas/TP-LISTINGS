@@ -1,6 +1,7 @@
 #include <pthread.h>
 #include <iostream>
 
+using namespace std;
 #define MAX 5
 
 //Funcion innecesaria para este ejemplo
@@ -42,7 +43,7 @@ void do_some_work ()
   int k = 1;
   while (1) {
     /* Do some useful things here...  */
-
+    cout << "factorial(" << k << ") = " << fact(k) << "\n";
     if (k++ == MAX)
       throw ThreadExitException (/* thread's return value = */ NULL);
   }
