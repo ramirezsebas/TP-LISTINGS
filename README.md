@@ -1,11 +1,11 @@
 # Capitulos Disponibles:
-- cap 1: 1.1 - 1.3 ✓
-- cap 2: 2.1 - 2.9
-- cap 3: 3.1 - 3.7
-- cap 4: 4.1-4.15
-- cap 5: 5.1 - 5.12
+- cap 1: 1.1 - 1.3  ✓
+- cap 2: 2.1 - 2.9  ✓
+- cap 3: 3.1 - 3.7  ✓
+- cap 4: 4.1 - 4.15 ✓
+- cap 5: 5.1 - 5.12 ✓
 # Listing 2.9
-- Para ejecutar el listing 2.9 es necesario tener instalado una libreria de ubuntu que ya no viene por defecto
+- Para ejecutar el listing 2.9 es necesario tener instalado una libreria de ubuntu que no viene por defecto
 - sudo apt install libtiff-dev
 # Trabajo Practico 1 - Lenguaje de Programacion 3
 
